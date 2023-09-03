@@ -1,10 +1,6 @@
-import React from 'react';
 import './ToDoInput.css';
 
-function ToDoInput(){
-    const [searchValue, setSearchValue] = React.useState('');
-
-    console.log('Los usuarios buscan: '+ searchValue)
+function ToDoInput({searchValue, setSearchValue}){
 
     return(
         <input 
@@ -12,8 +8,7 @@ function ToDoInput(){
         className='TodoSearch'
         value = {searchValue}
         onChange={(event) => {
-            setSearchValue(event.target.value)
-            
+            setSearchValue(event.target.value)              
         }}
         />
     );
