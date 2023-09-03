@@ -14,7 +14,6 @@ const defaultToDos = [
 function App() {
   return (
     <>
-
         <ToDoCounter completed={16} total={20}/>
 
         <ToDoInput/>

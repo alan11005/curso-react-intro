@@ -1,6 +1,11 @@
+import './ToDoInput.css';
+
 function ToDoInput(){
     return(
-        <input placeholder="Aqui"/>
+        <input 
+        placeholder="Aqui"
+        className='TodoSearch'
+        />
     );
 }
 
